@@ -75,10 +75,22 @@ Pour insérer une image, mettez le texte alternatif entre crochets ([]), suivi d
 
 ## Code :
 
-Pour mettre du code en ligne, entourez-le de backticks (``). Pour afficher un bloc de code, commencez et terminez le bloc avec trois backticks. Vous pouvez également spécifier le langage du code pour une coloration syntaxique appropriée. Par exemple :
+Pour mettre du code en ligne, entourez-le de backticks (```). Pour afficher un bloc de code, commencez et terminez le bloc avec trois backticks. Vous pouvez également spécifier le langage du code pour une coloration syntaxique appropriée. Par exemple :
 
 
 Voici du ``code en ligne``.
+
+(```)
+
+ let x = 5;
+
+ let y = 10;
+
+ let z = x + y;
+ 
+ console.log(z);
+
+(```)
 
 ```
 let x = 5;

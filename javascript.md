@@ -24,7 +24,7 @@
 - Condition if : if (condition) { } else if (condition) { } else { }
 - Switch :
 
-```
+``` javascript
 switch(expression) {
   case x:
     // code à exécuter si expression === x
@@ -41,7 +41,7 @@ switch(expression) {
 ## Fonctions :
 
 - Déclaration de fonction :
- ```
+ ```javascript
 function functionName(parameters) {
   // code à exécuter
 }
@@ -50,7 +50,7 @@ function functionName(parameters) {
 - Fonction fléchée : (parameters) => { // code à exécuter }
 - Fonction récursive :
 
-```
+```javascript
 function recursiveFunction(parameter) {
   if (condition) {
     return value;

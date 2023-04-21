@@ -80,6 +80,13 @@ Pour mettre du code en ligne, entourez-le de backticks (```). Pour afficher un b
 
 Voici du ``code en ligne``.
 
+
+```
+let x = 5;
+let y = 10;
+let z = x + y;
+console.log(z);
+```
 (```)
 
  let x = 5;
@@ -91,10 +98,3 @@ Voici du ``code en ligne``.
  console.log(z);
 
 (```)
-
-```
-let x = 5;
-let y = 10;
-let z = x + y;
-console.log(z);
-```

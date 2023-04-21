@@ -1,5 +1,5 @@
 - ## Sélecteur
-selector { property: value; }- sélectionne un élément HTML et applique la propriété et la valeur données.
+``selector { property: value; }`` : sélectionne un élément HTML et applique la propriété et la valeur données.
 - ## Modèle de boîte
 - ## Mise en page
 - ## Typographie

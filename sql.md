@@ -57,7 +57,7 @@ Exemple : affiche tout les "user" ayant entre 18 et 25 ans ou 30 ans
 ```sql
 SELECT *
 FROM user
-WHERE (age >= 18 AND age < 25 ) OR age = 30;
+WHERE (age >= 18 AND age <= 25 ) OR age = 30;
 ```
 
 ### Opérateur IN :
@@ -75,7 +75,7 @@ L'opérateur ``LIKE`` est utilisé pour faire correspondre des modèles dans SQL
 
 Le signe de pourcentage (%) est utilisé comme caractère générique.
 
-Exemple :
+Exemple : affiche tout les "user" dont le "prénom commence par un "S" "
 ```sql
 SELECT *
 FROM user

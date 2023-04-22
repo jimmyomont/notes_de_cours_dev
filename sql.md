@@ -37,7 +37,10 @@ WHERE condition;
 ```
 ---
 ## Condition
-
+```sql
+SELECT * FROM "user" WITH "condition"
+-- Selectionne toutes les colonnes qui se trouvent dans la table "user" si "condition"
+```
 ### Opérateurs de comparaison : 
 les opérateurs de comparaison sont utilisés pour comparer des valeurs dans SQL
 

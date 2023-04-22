@@ -38,7 +38,7 @@ WHERE condition;
 ---
 ## Condition
 ```sql
-SELECT * FROM "user" WITH "condition"
+SELECT * FROM "user" WHERE "condition"
 -- Selectionne toutes les colonnes qui se trouvent dans la table "user" si "condition"
 ```
 ### Opérateurs de comparaison : 

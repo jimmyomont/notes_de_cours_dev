@@ -16,34 +16,19 @@ CREATE USER utilisteur WITH PASSWORD 'mot_de_passe';
 CREATE DATABASE name_data WITH OWNER utilisateur;
 ```
 
+## Modifier ou supprimer un élément 
 
-## Connexion à PostgreSQL
+``ALTER`` pour modifier et ``DROP`` pour supprimer
 
-``psql -U <username> -d <database>``
+## Quitter pour se conecter au nouvel utilistateur 
 
-## Afficher de l'aide
-
-``\h``
-## Lister les bases de données
-``\l``
-
-## Se connecter à une base de données spécifique
-``\c <database>``
-
-## Lister les tables
-``\dt``
-
-## Décrire une table
-``\d <table>``
-
-## Exécuter une requête SQL
-``SELECT * FROM <table>;``
-
-## Quitter psql
 ``\q``
 
+## Connexion nouvel utilisateur 
 
+``psql  -U utilisateur -d name_data``
 
+---
 ## Créer une nouvelle table
 ``` SQL
 CREATE TABLE <table> (
@@ -65,3 +50,24 @@ UPDATE <table> SET <column1> = <value1>, <column2> = <value2>, ... WHERE <condit
 ```sql
 DELETE FROM <table> WHERE <condition>;
 ```
+---
+### Afficher de l'aide
+
+- ``\h``
+### Lister les bases de données
+- ``\l``
+
+### Se connecter à une base de données spécifique
+- ``\c <database>``
+
+### Lister les tables
+- ``\dt``
+
+### Décrire une table
+- ``\d <table>``
+
+### Exécuter une requête SQL
+- ``SELECT * FROM <table>;``
+
+### Quitter psql
+- ``\q``

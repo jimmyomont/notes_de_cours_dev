@@ -60,12 +60,30 @@ selector { property: value; } : sélectionne un élément HTML et applique la pr
 - ``d- isplay: none``: masque l'élément et ne prend pas de place sur la page.
 
 ### Position :
-
 - ``position: static``: l'élément est établi selon l'ordre normal du document.
 - ``position: relative``: l'élément est établi par rapport à sa position normale.
 - ``position: absolute``: l'élément est établi par rapport à son parent le plus proche qui a une position relative, absolue ou fixe.
 - ``position: fixed``: l'élément est défini par rapport à la fenêtre d'affichage et reste à la même position même lorsque la page est défilée.
 - ``position: sticky``: l'élément est établi par rapport à sa position normale jusqu'à ce qu'il atteint un seuil, puis reste collé à cette position.
+
+### Flexbox :
+- ``display: flex``: permet de créer un conteneur de boîtes flexibles.
+- ``flex-direction``: permet de spécifier la direction des boîtes flexibles (par exemple, row, column, row-reverse, column-reverse).
+- ``justify-content``: permet de spécifier l'alignement horizontal des boîtes flexibles (par exemple, flex-start, center, flex-end, space-between, - space-around).
+- ``align-items``: permet de spécifier l'alignement vertical des boîtes flexibles (par exemple, flex-start, center, flex-end, stretch).
+- ``align-self``: permet de spécifier l'alignement vertical d'une boîte flexible spécifique.
+- ``flex-wrap``: permet de spécifier si les boîtes flexibles doivent être sur une ligne unique ou sur plusieurs lignes.
+### Grid :
+- ``display``: grid: permet de créer un conteneur de grille.
+- ``grid-template-columns``: permet de spécifier la largeur des colonnes de grille.
+- ``grid-template-rows``: permet de spécifier la hauteur des lignes de grille.
+- ``grid-gap``: permet de spécifier l'espacement entre les cellules de la grille.
+- ``grid-column``: permet de spécifier les cellules de grille sur lesquelles un élément doit être placé.
+- ``grid-row``: permet de spécifier les cellules de grille sur lesquelles un élément doit être placé.
+### Tableaux :
+- ``border-collapse``: permet de spécifier comment les bordures des cellules de tableau se combinent.
+- ``border-spacing``: permet de spécifier l'espacement entre les cellules de tableau.
+- ``caption-side``: permet de spécifier l'emplacement de la légende d'un tableau.
 ### Float :
 - ``float: left``: fait flotter l'élément sur le côté gauche de son conteneur.
 - ``float: right``: fait flotter l'élément sur le côté droit de son conteneur.
@@ -216,24 +234,7 @@ selector { property: value; } : sélectionne un élément HTML et applique la pr
 
 ---
 # Autres
-### Tableaux :
-- ``border-collapse``: permet de spécifier comment les bordures des cellules de tableau se combinent.
-- ``border-spacing``: permet de spécifier l'espacement entre les cellules de tableau.
-- ``caption-side``: permet de spécifier l'emplacement de la légende d'un tableau.
-### Flexbox :
-- ``display: flex``: permet de créer un conteneur de boîtes flexibles.
-- ``flex-direction``: permet de spécifier la direction des boîtes flexibles (par exemple, row, column, row-reverse, column-reverse).
-- ``justify-content``: permet de spécifier l'alignement horizontal des boîtes flexibles (par exemple, flex-start, center, flex-end, space-between, - space-around).
-- ``align-items``: permet de spécifier l'alignement vertical des boîtes flexibles (par exemple, flex-start, center, flex-end, stretch).
-- ``align-self``: permet de spécifier l'alignement vertical d'une boîte flexible spécifique.
-- ``flex-wrap``: permet de spécifier si les boîtes flexibles doivent être sur une ligne unique ou sur plusieurs lignes.
-### Grid :
-- ``display``: grid: permet de créer un conteneur de grille.
-- ``grid-template-columns``: permet de spécifier la largeur des colonnes de grille.
-- ``grid-template-rows``: permet de spécifier la hauteur des lignes de grille.
-- ``grid-gap``: permet de spécifier l'espacement entre les cellules de la grille.
-- ``grid-column``: permet de spécifier les cellules de grille sur lesquelles un élément doit être placé.
-- ``grid-row``: permet de spécifier les cellules de grille sur lesquelles un élément doit être placé.
+
 ### Multi-colonnes :
 - ``column-count``: permet de spécifier le nombre de colonnes souhaité.
 - ``column-gap``: permet de spécifier l'espacement entre les colonnes.

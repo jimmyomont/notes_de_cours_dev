@@ -31,13 +31,18 @@ CREATE DATABASE name_data WITH OWNER utilisateur;
 ---
 ## Créer une nouvelle table
 ``` SQL
-CREATE TABLE <table> (
-    <column1> <datatype> <constraints>,
-    <column2> <datatype> <constraints>,
-    ...
-);
+CREATE TABLE "name_table" (
+  "id" INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY, -- Un identifiant unique généré par le RDBMS
+  "nom" TEXT NOT NULL, -- il est obligatoire
+  "age" INTEGER NOT NULL, -- obligatoire aussi
+  "adresse" TEXT,
+  "date de création de compte" TIMESTAMPTZ NOT NULL DEFAULT NOW(), -- on veut savoir quand un film a été ajouté dans la base et on défini la valeur par défaut comme étant maintenant       (c'est a dire au moment ou le film sera ajouté)
+  "date de modification de compte" TIMESTAMPTZ
+)
 ```
+
 ## Insérer des données dans une table
+
 ```sql
 INSERT INTO <table> (<column1>, <column2>, ...) VALUES (<value1>, <value2>, ...);
 ```
@@ -50,6 +55,8 @@ UPDATE <table> SET <column1> = <value1>, <column2> = <value2>, ... WHERE <condit
 ```sql
 DELETE FROM <table> WHERE <condition>;
 ```
+
+### e but étant de facilité les choses en faisant les table dans des script ``.js``
 ---
 ### Afficher de l'aide
 

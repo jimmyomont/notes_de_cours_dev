@@ -44,19 +44,19 @@ CREATE TABLE "name_table" (
 ## Insérer des données dans une table
 
 ```sql
-INSERT INTO <table> (<column1>, <column2>, ...) VALUES (<value1>, <value2>, ...);
+INSERT INTO <table_name> (<column1>, <column2>, ...) VALUES (<value1>, <value2>, ...);
 ```
 ## Mettre à jour des données dans une table
 ```sql
-UPDATE <table> SET <column1> = <value1>, <column2> = <value2>, ... WHERE <condition>;
+UPDATE <table_name> SET <column1> = <value1>, <column2> = <value2>, ... WHERE <condition>;
 ```
 
 ## Supprimer des données d'une table
 ```sql
-DELETE FROM <table> WHERE <condition>;
+DELETE FROM <table_nam> WHERE <condition>;
 ```
 
-### e but étant de facilité les choses en faisant les table dans des script ``.js``
+### Le but étant de facilité les choses en faisant les table dans des script ``.js``
 ---
 ### Afficher de l'aide
 

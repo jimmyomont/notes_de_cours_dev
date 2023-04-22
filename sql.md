@@ -3,8 +3,8 @@
 
 
 ```sql 
-SELECT * FROM  "table"
--- Selectionne toutes les colonnes qui se trouvent dans la table
+SELECT * FROM  "table_name"
+-- Selectionne toutes les colonnes qui se trouvent dans la table "table_name"
 ```
 
 

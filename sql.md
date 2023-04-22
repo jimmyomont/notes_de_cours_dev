@@ -40,7 +40,7 @@ les opérateurs de comparaison sont utilisés pour comparer des valeurs dans SQL
 - ``<=``: inférieur ou égal à
 - ``>=``: Plus grand ou égal à
 
-Exemple : 
+Exemple : affiche tout les "user" dont la valeur de "age" est inferieure ou égale à "18"
 ```sql
 SELECT *
 FROM user
@@ -63,7 +63,7 @@ WHERE (age >= 18 AND age <= 25 ) OR age = 30;
 ### Opérateur IN :
 L'opérateur ``IN`` est utilisé pour vérifier si une valeur existe dans une liste de valeurs.
 
-Exemple : 
+Exemple : affiche tout les user dont le "pays" est égale à "USA", à "Canada" et à "France"
 ```sql
 SELECT *
 FROM user
@@ -87,7 +87,7 @@ les valeurs ``NULL`` sont des valeurs spéciales qui indiquent l'absence d'une v
 
 Vous pouvez vérifier les valeurs ``NULL`` à l'aide des opérateurs ``IS NULL`` et ``IS NOT NULL``.
 
-Exemple :
+Exemple : affiche tout les "user" dont la valeur "téléphone" est vide ("NUL")
 ```sql
 SELECT *
 FROM user

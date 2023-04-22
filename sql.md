@@ -53,11 +53,11 @@ les opérateurs logiques sont utilisés pour combiner plusieurs conditions dans 
 - ``OR``: renvoie vrai si l'une des conditions est vraie
 - ``NOT``: annule une condition (renvoie vrai si la condition est fausse)
 
-Exemple : 
+Exemple : affiche tout les "user" ayant entre 18 et 25 ans ou 30 ans
 ```sql
 SELECT *
 FROM user
-WHERE age >= 18 AND genre = 'femme';
+WHERE (age >= 18 AND age < 25 ) OR age = 30;
 ```
 
 ### Opérateur IN :

@@ -1,4 +1,6 @@
-# Balises HTML :
+# HTML
+
+## Balises HTML :
 
 ``` html
 <!DOCTYPE html> - Définit le type de document

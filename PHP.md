@@ -1,5 +1,4 @@
 # PHP
-
 ---
 ## Balise d'ouverture et de fermeture PHP :
 La balise d'ouverture ``<?php`` et la balise de fermeture ``?>`` sont utilisées pour délimiter le code PHP à l'intérieur d'un fichier HTML. Tout le code PHP doit être compris entre ces balises.
@@ -90,8 +89,8 @@ foreach ($array as $value) {
 }
 ```
 
----
-## Exemple de boucle while :
+
+Exemple de boucle while :
 
 ```php
 <?php
@@ -133,7 +132,7 @@ Exemple :
 ```
 ---
 ## Traitement de formulaires :
-Les formulaires permettent à l'utilisateur de saisir des données qui sont envoyées au serveur pour traitement. Les données sont récupérées en utilisant les superglobales $_GETou $_POST.
+Les formulaires permettent à l'utilisateur de saisir des données qui sont envoyées au serveur pour traitement. Les données sont récupérées en utilisant les superglobales ``$_GET`` ou ``$_POST``.
 
 Exemple :
 
@@ -157,7 +156,7 @@ Exemple :
 </html>
 ```
 
-Dans le fichier de traitement traitement.php :
+Dans le fichier de traitement "traitement.php" :
 
 ```php
 <?php
@@ -170,7 +169,7 @@ Dans le fichier de traitement traitement.php :
 ---
 
 ## Inclusion de fichiers :
-La fonction includepermet d'inclure le code provenant d'un autre fichier PHP dans le fichier courant.
+La fonction ``include`` permet d'inclure le code provenant d'un autre fichier "PHP" dans le fichier courant.
 
 Exemple :
 
@@ -178,12 +177,12 @@ Exemple :
 <?php
 	include 'config.php';
 
-	// Utilisation des variables et fonctions définies dans config.php
+	// Utilisation des variables et fonctions définies dans un fichier config.php
 ?>
 ```
 ---
 ## Connexion à une base de données :
-La fonction mysqli_connect permet de se connecter à une base de données MySQL.
+La fonction ``mysqli_connect`` permet de se connecter à une base de données "MySQL".
 
 Exemple :
 
@@ -201,9 +200,9 @@ Exemple :
 ```
 ---
 ## Requêtes SQL :
-Les requêtes SQL permettent de récupérer, ajouter, modifier ou supprimer des données dans une base de données.
+Les requêtes "SQL" permettent de récupérer, ajouter, modifier ou supprimer des données dans une base de données.
 
-Exemple de requête SELECT :
+Exemple de requête ``SELECT`` :
 
 ```php
 <?php
@@ -215,7 +214,7 @@ Exemple de requête SELECT :
 ?>
 ```
 
-Exemple de requête INSERT :
+Exemple de requête ``INSERT`` :
 
 ```php
 <?php
@@ -227,7 +226,7 @@ Exemple de requête INSERT :
 ```
 ---
 ## Gestion des erreurs :
-La fonction mysqli_error permet de récupérer le message d'erreur renvoyé par MySQL en cas d'échec d'une requête.
+La fonction ``mysqli_error`` permet de récupérer le message d'erreur renvoyé par "MySQL" en cas d'échec d'une requête.
 
 Exemple :
 
@@ -242,7 +241,7 @@ Exemple :
 ```
 ---
 ## Envoi de mails :
-La fonction mail permet d'envoyer un mail en PHP.
+La fonction ``mail`` permet d'envoyer un mail en "PHP".
 
 Exemple :
 
@@ -257,7 +256,7 @@ Exemple :
 ```
 ---
 ## Manipulation de fichiers :
-Les fonctions fopen, fwriteet fclosepermettent de créer et d'écrire dans un fichier en PHP.
+Les fonctions ``fopen`` , ``fwrite`` et ``fclose`` permettent de créer et d'écrire dans un fichier en "PHP".
 
 Exemple :
 

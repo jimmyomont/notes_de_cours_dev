@@ -1,3 +1,6 @@
+# JAVASCRIPT 
+---
+
 ## Variables et types de données :
 
 - Déclaration de variables : let variableName = value;

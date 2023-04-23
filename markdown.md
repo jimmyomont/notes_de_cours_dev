@@ -1,4 +1,7 @@
-# Titres :
+# MARKDOWN
+---
+
+## Titres :
 
 Pour créer des titres, utilisez des hashtags (#). Le nombre de hashtags détermine le niveau du titre. Par exemple :
 

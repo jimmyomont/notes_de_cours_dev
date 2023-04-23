@@ -268,7 +268,7 @@ Exemple :
 ?>
 ```
 ---
-## Séances :
+## Session :
 Les sessions permettent de stocker des variables qui sont accessibles sur plusieurs pages du site.
 
 Exemple :

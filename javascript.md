@@ -75,39 +75,55 @@ function recursiveFunction(parameter) {
 ---
 
 ## Objets et tableaux :
+### Objet
 
-Déclaration d'un objet : 
+- Déclaration d'un objet : 
+
+```js
+let objectName = { property1: value1, property2: value2 };
 ```
-
-``let objectName = { property1: value1, property2: value2 }``;
 
 - Accéder à une propriété d'un objet : 
 
-``objectName.propertyName ou objectName["propertyName"]``;
+```js
+objectName.propertyName ou objectName["propertyName"];
+```
 
 - Ajouter une propriété à un objet : 
 
-``objectName.newProperty = value``;
+```js
+objectName.newProperty = value;
+```
 
 - Supprimer une propriété d'un objet :
 
- ``delete objectName.propertyName``;
- ```
+ ```js
+ delete objectName.propertyName;
+  ```
 
-Déclaration d'un tableau : 
+### tableau
 
+- Déclaration d'un tableau : 
+
+```js
+let arrayName = [value1, value2, value3]; 
 ```
-``let arrayName = [value1, value2, value3]``;
 
 - Ajouter un élément à un tableau : 
 
-``arrayName.push(value)``;
+```js
+arrayName.push(value);
+```
 
 - Supprimer le dernier élément d'un tableau : 
 
-``arrayName.pop()``;
+```js
+arrayName.pop();
+```
 
 - Accéder à un élément d'un tableau : 
 
-``arrayName[index]``
+```js
+arrayName[index]; 
 ```
+

@@ -52,7 +52,9 @@ Utilisez l'héritage pour créer des classes de validation spécialisées qui h�
 Exemple : 
 
 ```js 
-//Dans cet exemple, la classe Personencapsule les données nameet age, et les méthodes getName()et getAge()permet d'y accéder de manière sécurisée. Les méthodes setName()et setAge()effectuent également une validation des données avant de les modifier.
+//Dans cet exemple, la classe Personencapsule les données nameet age, et les méthodes getName() 
+//et getAge()permet d'y accéder de manière sécurisée. 
+//Les méthodes setName()et setAge()effectuent également une validation des données avant de les modifier.
 
 public class StringValidator {
     public boolean validate(String value) {
@@ -78,7 +80,8 @@ Utilisez le polymorphisme pour permettre à différentes méthodes de validation
 Exemple : 
 
 ```js 
-//Dans cet exemple, la classe StringValidatorest une classe de validation de base pour les chaînes de caractères. La classe EmailValidatorhérite de StringValidatoret ajoute une validation spécifique à l'adresse email.
+//Dans cet exemple, la classe StringValidatorest une classe de validation de base pour les chaînes de caractères. 
+//La classe EmailValidatorhérite de StringValidatoret ajoute une validation spécifique à l'adresse email.
 
 public class Validator {
     public boolean validate(Object value) {
@@ -100,7 +103,8 @@ Définissez des interfaces pour les classes de validation et utilisez-les pour g
 Exemple : 
 
 ```js 
-//Dans cet exemple, la classe Validatorutilise le polymorphisme pour valider des objets de différents types. Les méthodes de validation spécifiques sont appelées en fonction du type de données en entrée.
+//Dans cet exemple, la classe Validatorutilise le polymorphisme pour valider des objets de différents types. 
+//Les méthodes de validation spécifiques sont appelées en fonction du type de données en entrée.
 
 public interface Validator<T> {
     boolean validate(T value);
@@ -126,7 +130,8 @@ Utilisez des exceptions pour gérer les erreurs de validation. Les exceptions pe
 Exemple : 
 
 ```js 
-//Dans cet exemple, la méthode validate()est appelée dans le constructeur et chaque méthode de modification pour valider les données. Si les données ne passent pas la validation, une exception IllegalArgumentExceptionest acquise.
+//Dans cet exemple, la méthode validate()est appelée dans le constructeur et chaque méthode de modification pour valider les données.
+// Si les données ne passent pas la validation, une exception IllegalArgumentExceptionest acquise.
 
 public class Person {
     private String name;

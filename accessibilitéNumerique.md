@@ -1,4 +1,4 @@
-#ACCESSIBILITE NUMERIQUE
+# ACCESSIBILITE NUMERIQUE
 
 ## Les bonnes pratiques 
 

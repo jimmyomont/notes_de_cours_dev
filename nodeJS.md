@@ -55,7 +55,7 @@ module.exports = {
 
 ## Processus 
 
-Node.js est capable de gérer des processus et des threads en interne.
+### Node.js est capable de gérer des processus et des threads en interne.
 
 ``process.argv`` Récupère les arguments de la ligne de commande
 
@@ -139,7 +139,7 @@ main();
 ---
 
 ## Serveurs
-Node.js est souvent utilisé pour créer des serveurs Web 
+### Node.js est souvent utilisé pour créer des serveurs Web 
 
 ``http.createServer()`` : Créer un serveur HTTP
 
@@ -276,7 +276,7 @@ app.listen(3000, () => {
 ---
 ## Gestion des fichiers 
 
-Node.js est également capable de gérer les fichiers et les répertoires.
+### Node.js est également capable de gérer les fichiers et les répertoires.
 
 ``fs.readFile()`` : Lit un fichier
 

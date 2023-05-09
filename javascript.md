@@ -1,6 +1,15 @@
 # JAVASCRIPT 
 ---
+## Fondamentaux : 
 
+Déclarer le type (const, let ou var ) par un nom (l'index) avec l'attribution ( = )  d'une valeur ( fonction ,string, number, boléen, etc)
+```js 
+const index = valeur 
+let valeur = 2 + 4 // console.log(valeur) affiche -> 6
+var string = "ceci est un test !" // console.log(string) affiche -> ceci est un test !
+```
+
+---
 ## Variables et types de données :
 
 - Déclaration de variables : let variableName = value;
@@ -8,14 +17,14 @@
 - Convertir une chaîne de caractères en nombre : parseInt(string)
 - Convertir un nombre en chaîne de caractères : toString()
 - Concaténer des chaînes de caractères : "string1" + "string2"
-- Comparaison de valeurs : == pour comparer la valeur et === pour comparer la valeur et le type
+- Comparaison de valeurs : == pour comparer une valeur et === pour comparer la valeur et le type (chaîne de caractère, boléen etc )
 
 ---
 
 ## Opérateurs :
 
 - Opérateurs mathématiques : + (addition), - (soustraction), * (multiplication), / (division), % (modulo)
-- Opérateurs de comparaison : == (égal à), != (différent de), > (supérieur à), < (inférieur à), >= (supérieur ou égal à), <= (inférieur ou égal à)
+- Opérateurs de comparaison : == (égal à valeur), === (égal à type/valeur) != (différent de), > (supérieur à), < (inférieur à), >= (supérieur ou égal à), <= (inférieur ou égal à)
 - Opérateurs logiques : && (et), || (ou), ! (non)
 
 ---
@@ -67,7 +76,8 @@ function recursiveFunction(parameter) {
 
 ## Objets et tableaux :
 
-- Déclaration d'un objet : 
+Déclaration d'un objet : 
+```
 
 ``let objectName = { property1: value1, property2: value2 }``;
 
@@ -82,10 +92,12 @@ function recursiveFunction(parameter) {
 - Supprimer une propriété d'un objet :
 
  ``delete objectName.propertyName``;
+ ```
 
-- Déclaration d'un tableau : let arrayName = 
+Déclaration d'un tableau : 
 
-``[value1, value2, value3]``;
+```
+``let arrayName = [value1, value2, value3]``;
 
 - Ajouter un élément à un tableau : 
 
@@ -98,3 +110,4 @@ function recursiveFunction(parameter) {
 - Accéder à un élément d'un tableau : 
 
 ``arrayName[index]``
+```

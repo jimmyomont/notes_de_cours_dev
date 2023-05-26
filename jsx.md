@@ -5,7 +5,7 @@ Extension de syntaxe utilisée principalement avec React pour décrire la struct
 
 Voici un exemple simple de JSX :
 
-```js
+```jsx
 import React from 'react';
 
 function App() {
@@ -37,29 +37,29 @@ En utilisant JSX, il devient plus facile de créer des composants réutilisables
 
 
 Création d'éléments :
-```js
+```jsx
 const element = <div>Hello, world!</div>;
 ```
 
 Utilisation d'attributs :
-```js
+```jsx
 const element = <img src={imageUrl} alt="description" />;
 ```
 
 Utilisation de variables et d'expressions JavaScript :
-```js
+```jsx
 const name = 'John';
 const element = <h1>Hello, {name}!</h1>;
 ```
 
 Utilisation des structures de contrôle de flux :
-```js
+```jsx
 const isLoggedIn = false;
 const element = isLoggedIn ? <LogoutButton /> : <LoginButton />;
 ```
 
 Utilisation de listes et de clés :
-```js
+```jsx
 const items = ['apple', 'banana', 'orange'];
 const element = (
   <ul>
@@ -71,7 +71,7 @@ const element = (
 ```
 
 Utilisation de composants :
-```js
+```jsx
 function Greeting(props) {
   return <h1>Hello, {props.name}!</h1>;
 }

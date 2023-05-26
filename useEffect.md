@@ -29,19 +29,33 @@ L'effet peut être utilisé pour effectuer des opérations telles que la manipul
 Exemples d'utilisation 
 Exemple 1 : Mise à jour du titre de la page
 ```js
+// Importation des hooks useEffect et useState depuis le module React
 import React, { useEffect, useState } from 'react';
 
+// Définition du composant Page
 function Page() {
+  // Déclaration de l'état local "count" avec une valeur initiale de 0 et la fonction "setCount" pour le mettre à jour
   const [count, setCount] = useState(0);
 
+  // Utilisation de useEffect pour définir un effet
   useEffect(() => {
-    document.title = `Compteur : ${count}`;
-  }, [count]);
+    // L'effet est exécuté après chaque rendu du composant et lorsque la dépendance "count" change
 
+    // Mise à jour du titre de la page avec la valeur du compteur "count"
+    document.title = `Compteur : ${count}`;
+
+    // Fonction de nettoyage facultative retournée par useEffect
+    // Cette fonction sera exécutée avant la suppression de l'effet
+    // Ici, nous n'avons pas besoin de nettoyage, donc rien n'est spécifié
+  }, [count]); // Spécification de la dépendance "count"
+
+  // Fonction de gestion de l'événement pour augmenter le compteur
   const increment = () => {
+    // Mise à jour de la valeur du compteur "count" en ajoutant 1
     setCount(count + 1);
   };
 
+  // Rendu du composant
   return (
     <div>
       <p>Compteur : {count}</p>
@@ -59,16 +73,23 @@ Exemple 2 : Appel à une API
 import React, { useEffect, useState } from 'react';
 
 function PostList() {
+  // Déclaration de l'état local "posts" avec une valeur initiale vide
   const [posts, setPosts] = useState([]);
 
+  // Utilisation de useEffect pour effectuer un appel à une API lors du premier rendu du composant
   useEffect(() => {
+    // Appel à l'API pour récupérer les données des posts
     fetch('https://api.example.com/posts')
       .then(response => response.json())
-      .then(data => setPosts(data));
+      .then(data => {
+        // Mise à jour de l'état "posts" avec les données obtenues de l'API
+        setPosts(data);
+      });
   }, []);
 
   return (
     <ul>
+      {/* Mapping des posts pour les afficher sous forme de liste */}
       {posts.map(post => (
         <li key={post.id}>{post.title}</li>
       ))}

@@ -79,4 +79,37 @@ function Form() {
 
 Dans cet exemple, nous utilisons ``useState`` pour déclarer une variable d'état nameavec une valeur initiale vide. L'entrée est une "entrée contrôlée", ce qui signifie que sa valeur est liée à la variable d'état nameet que la fonction handleChangeest appelée à chaque modification de l'entrée. Lorsque le formulaire est soumis, la fonction ``handleSubmit`` est désignée, permet une alerte avec le nom soumis.
 
+exemple 3: Compteur (avec detail en commentaire)
+```js
+import React, { useState } from 'react';
+
+function Example() {
+  // Déclaration de l'état local "count" avec une valeur initiale de 0
+  const [count, setCount] = useState(0);
+
+  // Déclaration de l'état local "text" avec une valeur initiale vide
+  const [text, setText] = useState('');
+
+  // Fonction de gestion de l'événement pour augmenter le compteur
+  const increment = () => {
+    setCount(count + 1); // Mise à jour de la valeur de "count" en ajoutant 1
+  };
+
+  // Fonction de gestion de l'événement pour mettre à jour le texte
+  const handleChange = (event) => {
+    setText(event.target.value); // Mise à jour de la valeur de "text" avec la valeur de l'input
+  };
+
+  return (
+    <div>
+      <p>Compteur : {count}</p>
+      <button onClick={increment}>Incrémenter</button>
+
+      <input type="text" value={text} onChange={handleChange} />
+      <p>Texte saisi : {text}</p>
+    </div>
+  );
+}
+```
+
 Ces exemples illustrent l'utilisation ``useState`` pour gérer l'état local dans les composants fonctionnels de React. Vous pouvez créer autant de variables d'état que nécessaire dans un composant en utilisant ``useState`` plusieurs fois.

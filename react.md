@@ -114,7 +114,7 @@ class MyComponent extends React.Component {
 }
 ```
 
-## Crochets :
+## Hooks :
 ```js
 import React, { useState, useEffect } from 'react';
 

@@ -222,14 +222,14 @@ Exemple :
 </select>
 ```
 
-6 - ``aria-haspopup`` Cet attribut est utilisé pour indiquer qu'un élément a un menu déroulant ou une fenêtre contextuelle. Il est utilisé pour indiquer qu'un clic sur l'élément ouvre une fenêtre contextuelle. 
+7 - ``aria-haspopup`` Cet attribut est utilisé pour indiquer qu'un élément a un menu déroulant ou une fenêtre contextuelle. Il est utilisé pour indiquer qu'un clic sur l'élément ouvre une fenêtre contextuelle. 
 
 Exemple :
 ```css
 <button aria-haspopup="true">Menu</button>
 ```
 
-7 - ``aria-controls`` Cet attribut est utilisé pour indiquer l'ID de l'élément contrôlé par l'élément actuel. Il est utilisé pour relier des éléments tels que les onglets et leur contenu associé. 
+8 - ``aria-controls`` Cet attribut est utilisé pour indiquer l'ID de l'élément contrôlé par l'élément actuel. Il est utilisé pour relier des éléments tels que les onglets et leur contenu associé. 
 
 Exemple :
 ```html

@@ -24,7 +24,7 @@
 # Hôtes virtuels
 
 - ``sudo a2ensite monsite.conf`` : Activer un site
-- ``sudo a2dissite monsite.conf` : Désactiver un site
+- ``sudo a2dissite monsite.conf`` : Désactiver un site
 
 
 # Modules

@@ -81,17 +81,17 @@ Il propose des fonctionnalités intégrées pour optimiser votre contenu et amé
 
 ``wp user delete [ID-utilisateur]`` : Supprimer un utilisateur.
 
-``wp user update [ID-utilisateur]`` --user_pass=[mot-de-passe] : Mettre à jour le mot de passe d'un utilisateur.
+``wp user update [ID-utilisateur] --user_pass=[mot-de-passe]`` : Mettre à jour le mot de passe d'un utilisateur.
 
 ### Gestion du contenu :
 
-``wp post create --post_type=[type]`` --post_title=[titre] --post_status=[statut] : Créer un nouvel article.
+``wp post create --post_type=[type] --post_title=[titre] --post_status=[statut] ``: Créer un nouvel article.
 
 ``wp post list`` : Afficher la liste des articles.
 
 ``wp post delete [ID-article]`` : Supprimer un article.
 
-``wp post update [ID-article]`` --post_title=[nouveau-titre] : Mettre à jour le titre d'un article.
+``wp post update [ID-article] --post_title=[nouveau-titre]`` : Mettre à jour le titre d'un article.
 
 ### Réglages généraux :
 

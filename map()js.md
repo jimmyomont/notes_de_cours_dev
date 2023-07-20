@@ -6,21 +6,22 @@
 ```js
 const nouveauTableau = tableau.map((élémentCourant, index, tableau) => {
   // Code à exécuter pour chaque élément du tableau
-  return résultat;
+  return résultat; //retourne le resultat des elements à l'objet
 });
 ```
 
 ### Paramètre :
 
-``élémentCourant``: L'élément en cours de traitement dans le tableau.
+``élémentCourant*``: L'élément en cours de traitement dans le tableau. (appel des elements du nouveau tableau)
 
-``index``: L'index de l'élément en cours de traitement dans le tableau.
+``index*``: L'index de l'élément en cours de traitement dans le tableau.(l'indexation des éléments dans le tableau d'origine)
 
-``tableau``: Le tableau sur lequel map()a été appelé.
+``tableau*``: Le tableau sur lequel map()a été appelé. (rappel le tableau d'origine sans les modifications de map())
 
 ``Valeur de retour`` : 
 Un nouveau tableau contenant les résultats des appels de la fonction pour chaque élément du tableau d'origine.
 
+******Notez que les noms des ``paramètres`` sont paramètrables.*****
 ### Remarque :
 map() ne modifiez pas le tableau d'origine, il retourne plutôt un nouveau tableau.
 

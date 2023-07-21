@@ -151,3 +151,31 @@ console.log(prenomsMajusculesEtLongueur);
 10 - map()ajoute chaque objet retourné au nouveau tableau prenomsMajusculesEtLongueur.
 
 11 - Une fois qu'a map()terminé de parcourir tous les éléments de prenomsMinuscules, il renvoie le nouveau tableau prenomsMajusculesEtLongueurcontenant les objets avec les prénoms en majuscules, leur longueur, leur index et le tableau d'origine.
+
+## Exemple d'insertion élément tableau dans un ``Select``
+
+```js
+// On crée un tableau contenant plusieurs prénoms
+const tableauTest = ['Alain', 'Nolwenn', 'Elena', 'Jimmy', 'Julien'];
+
+export function SelectInput({ name }) {
+
+    // On utilise la méthode "map" pour transformer chaque élément du tableau "tableauTest" en un élément JSX (une option du sélecteur)
+    // Chaque option aura une clé unique (l'index) et une valeur égale au prénom
+    const mappingValue = tableauTest.map((value, index) => (
+        <option key={index} value={value}>{value}</option>
+    ));
+
+    return (
+        <div className='select-container'>
+            <label htmlFor={name} className='select-box'>{name}
+                <select id={name} className='select-item'>
+                    <option>--choisir une option--</option>
+                    {/* On ajoute les options du sélecteur en utilisant le tableau "mappingValue" créé précédemment */}
+                    {mappingValue}
+                </select>
+            </label>
+        </div>
+    );
+}
+```

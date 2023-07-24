@@ -13,7 +13,8 @@
 - Le programme peut lancer une tâche et continuer immédiatement avec les instructions suivantes sans attendre la fin de cette tâche.
 - Les tâches asynchrones s'exécutent en arrière-plan et peuvent signaler leur achèvement ou leurs erreurs par le biais de callbacks, de promesses (promises) ou de mots-clés tels que "async/wait".
 - L'asynchronisme est utile pour les opérations qui consomment du temps, comme les requêtes réseau ou les lectures/écritures de fichiers, car cela permet d'éviter les blocages et de maintenir une réactivité élevée de l'application.
-- Exemple de programmation asynchrone en JavaScript avec "async/await" :
+
+#### Exemple de programmation asynchrone en JavaScript avec "async/await" :
 ```js
 async function fetchUserData() {
   try {

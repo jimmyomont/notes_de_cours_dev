@@ -38,3 +38,14 @@
     - Relation : Un acteur peut jouer dans plusieurs films, et chaque film peut avoir plusieurs acteurs.
     - Relation : Un acteur peut jouer dans 0 ou N films, et chaque film peut avoir 0 ou N acteurs.
     - Représentation : Acteur(0,N) <- Joue -> Film(0,N)
+
+## One-to-One (1 -> 1):
+- Exemple 1 :
+    - Entités : Étudiant, Carte d'identité
+    - Relation : Chaque étudiant possède exactement 1 carte d'identité, et chaque carte d'identité appartient à un seul étudiant.
+    - Représentation :Étudiant(1) <- Possède -> Carte d'identité(1)
+
+- Exemple 2 :
+    - Entités : Employé, Badge d'accès
+    - Relation : Chaque employé a exactement 1 badge d'accès, et chaque badge d'accès est associé à un seul employé.
+    - Représentation : Employé(1) <- Possède -> Badge d'accès(1)

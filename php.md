@@ -169,13 +169,15 @@ Dans le fichier de traitement "traitement.php" :
 ---
 
 ## Inclusion de fichiers :
-La fonction ``include`` permet d'inclure le code provenant d'un autre fichier "PHP" dans le fichier courant.
+ Vous pouvez inclure d'autres fichiers PHP dans votre code à l'aide de ``include`` ou ``require``.
 
 Exemple :
 
 ```php 
 <?php
 	include 'config.php';
+	include "mon_fichier.php";
+    require "autre_fichier.php";
 
 	// Utilisation des variables et fonctions définies dans un fichier config.php
 ?>
@@ -281,6 +283,17 @@ Exemple :
 
 	// Utilisation de la variable de session
 ?>
+```
+---
+## Manipulation de chaînes :
+
+PHP offre de nombreuses fonctions pour manipuler les chaînes de caractères.
+
+Exemple :
+```php
+	$texte = "Bonjour, monde !";
+	$longueur = strlen($texte); // Longueur de la chaîne
+	$position = strpos($texte, "monde"); // Position du mot "monde"
 ```
 
 
